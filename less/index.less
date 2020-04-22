@@ -34,6 +34,7 @@ html {
 	font-size: 62.5%;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
 
 body {
 	line-height: 1;
@@ -93,12 +94,13 @@ header {
 	nav {
 		
 		ul {
+			
+			border-bottom: 4px solid black;	
+			.flex-spaceAround();
 			@media (max-width: 500px) {
 				.flex-column();
 				
 			  }	
-			border-bottom: 4px solid black;	
-			.flex-spaceAround();
 			
 			li {
 				
@@ -114,25 +116,42 @@ header {
 }
 
 .container-1 {
-	@media (max-width: 500px) {
-		.flex-column();
+		display: flex;
 		
-	  }	
+		@media (max-width: 500px) {
+			.flex-column();
 			
-	
-	.name{
-		.flex-column();
+		  }	
+	img {
 		
-		;
+		@media (max-width: 500px) {
+			width: 500px;
+			
+		  }	
+	}
+	.name{
+		display: flex;
+		flex-direction: column;
+		
+		
 	
 			h1 {
-			font-size: 12rem;
-			padding-top: 15px;
-		}
+				font-family: 'Audiowide', cursive;	
+				font-size: 10rem;
+				padding-top: 15px;
+				@media (max-width: 500px) {
+					font-size: 4rem;
+					
+				  	}
+				}
 			h2 {
-			font-size: 2.5rem;
-			padding-top: 24px;
-		}
+				font-size: 2.5rem;
+				padding-top: 24px;
+				@media (max-width: 500px) {
+					font-size: 2rem;
+					
+				  }	
+				}
 	}	
 }
 
@@ -162,6 +181,10 @@ header {
 		border-left: 1px solid black;
 		width: 35%;
 		padding: 30px;
+		@media (max-width: 500px) {
+			padding: 0px;
+			
+		  }	
 		
 
 		li {
