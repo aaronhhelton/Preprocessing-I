@@ -184,10 +184,43 @@ header nav ul li a {
 .container-2 .skills {
   border-left: 1px solid black;
   width: 35%;
-  padding-left: 30px;
-  padding-top: 30px;
+  padding: 30px;
 }
 .container-2 .skills li {
   font-size: 1.8rem;
   padding-top: 10px;
+}
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+table th {
+  font-weight: bold;
+  font-size: 1.8rem;
+}
+table td {
+  text-align: center;
+  font-size: 1.5rem;
+  border-bottom: 1px dotted black;
+}
+footer {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+footer .contact-footer {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+footer .contact-footer button {
+  color: white;
+  background-color: black;
+  padding: 10px;
+}
+footer .copyright p {
+  padding: 1px;
+  text-align: center;
+  color: white;
 }
