@@ -29,6 +29,13 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
+
+html {
+	font-size: 62.5%;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+
 body {
 	line-height: 1;
 }
@@ -50,10 +57,183 @@ table {
 
 /* Set every element's box-sizing to border-box */
 * {
-    box-sizing: border-box;
+	box-sizing: border-box;
+	
 }
 
 html, body {
-    height: 100%;
+	height: 100%;
+	
 }
 
+@bgColor: black;
+@fontSize: 1.5rem;
+
+.flex-spaceAround {
+	display: flex;
+	justify-content: space-around;
+}
+
+.flex-center {
+	display: flex;
+	justify-content: center;
+}
+
+.flex-wrap {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.flex-column {
+	display: flex;
+	flex-direction: column;
+}
+
+header {
+	
+	nav {
+		
+		ul {
+			
+			border-bottom: 4px solid black;	
+			.flex-spaceAround();
+			@media (max-width: 500px) {
+				.flex-column();
+				
+			  }	
+			
+			li {
+				
+				font-size: 2rem;
+
+				a {
+					text-decoration: none;
+					color: black;
+				}
+			}
+		}
+	}
+}
+
+.container-1 {
+		display: flex;
+		
+		@media (max-width: 500px) {
+			.flex-column();
+			
+		  }	
+	img {
+		
+		@media (max-width: 500px) {
+			width: 500px;
+			
+		  }	
+	}
+	.name{
+		display: flex;
+		flex-direction: column;
+		
+		
+	
+			h1 {
+				font-family: 'Audiowide', cursive;	
+				font-size: 10rem;
+				padding-top: 15px;
+				@media (max-width: 500px) {
+					font-size: 4rem;
+					
+				  	}
+				}
+			h2 {
+				font-size: 2.5rem;
+				padding-top: 24px;
+				@media (max-width: 500px) {
+					font-size: 2rem;
+					
+				  }	
+				}
+	}	
+}
+
+.container-2 {
+	.flex-spaceAround();
+	
+		
+	
+		
+	
+
+		h3 {
+			font-size: 1.8rem;	
+			font-weight: bold;
+			}
+
+	.about {
+		width: 60%;
+		padding-left: 10px;
+		padding-top: 30px;
+			p {
+				font-size: @fontSize;
+				padding-top: 5px;
+			}
+	}
+	.skills {
+		border-left: 1px solid black;
+		width: 35%;
+		padding: 30px;
+		@media (max-width: 500px) {
+			padding: 0px;
+			
+		  }	
+		
+
+		li {
+			font-size: 1.8rem;
+			padding-top: 10px;
+		}
+		}
+
+		
+	
+}
+
+	table {
+		margin: 10px;
+		border-collapse: collapse;
+		width: 100%;
+		
+		th {
+			font-weight: bold;
+			font-size: 1.8rem;
+		}
+
+		td {
+			text-align: center;
+			font-size: @fontSize;
+			border-bottom: 1px dotted black;
+		}
+	}
+
+
+footer{
+	background-color: @bgColor;
+	.flex-center();
+	flex-direction: column;
+		.contact-footer {
+			.flex-center();
+			padding: 10px;
+			button {
+				
+				color: white;
+				background-color: black;
+				padding: 10px;
+			}
+		}
+		.copyright p{
+				font-size: @fontSize;
+				padding: 1px;
+			 	text-align: center;
+				color: white;
+			}
+		
+	}	

@@ -1,1 +1,284 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+html {
+  font-size: 62.5%;
+}
+@font-face {
+  font-family: 'Audiowide';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Audiowide Regular'), local('Audiowide-Regular'), url(https://fonts.gstatic.com/s/audiowide/v8/l7gdbjpo0cum0ckerWCtkQ.ttf) format('truetype');
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+.flex-spaceAround {
+  display: flex;
+  justify-content: space-around;
+}
+.flex-center {
+  display: flex;
+  justify-content: center;
+}
+.flex-wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+header nav ul {
+  border-bottom: 4px solid black;
+  display: flex;
+  justify-content: space-around;
+}
+@media (max-width: 500px) {
+  header nav ul {
+    display: flex;
+    flex-direction: column;
+  }
+}
+header nav ul li {
+  font-size: 2rem;
+}
+header nav ul li a {
+  text-decoration: none;
+  color: black;
+}
+.container-1 {
+  display: flex;
+}
+@media (max-width: 500px) {
+  .container-1 {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media (max-width: 500px) {
+  .container-1 img {
+    width: 500px;
+  }
+}
+.container-1 .name {
+  display: flex;
+  flex-direction: column;
+}
+.container-1 .name h1 {
+  font-family: 'Audiowide', cursive;
+  font-size: 10rem;
+  padding-top: 15px;
+}
+@media (max-width: 500px) {
+  .container-1 .name h1 {
+    font-size: 4rem;
+  }
+}
+.container-1 .name h2 {
+  font-size: 2.5rem;
+  padding-top: 24px;
+}
+@media (max-width: 500px) {
+  .container-1 .name h2 {
+    font-size: 2rem;
+  }
+}
+.container-2 {
+  display: flex;
+  justify-content: space-around;
+}
+.container-2 h3 {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+.container-2 .about {
+  width: 60%;
+  padding-left: 10px;
+  padding-top: 30px;
+}
+.container-2 .about p {
+  font-size: 1.5rem;
+  padding-top: 5px;
+}
+.container-2 .skills {
+  border-left: 1px solid black;
+  width: 35%;
+  padding: 30px;
+}
+@media (max-width: 500px) {
+  .container-2 .skills {
+    padding: 0px;
+  }
+}
+.container-2 .skills li {
+  font-size: 1.8rem;
+  padding-top: 10px;
+}
+table {
+  margin: 10px;
+  border-collapse: collapse;
+  width: 100%;
+}
+table th {
+  font-weight: bold;
+  font-size: 1.8rem;
+}
+table td {
+  text-align: center;
+  font-size: 1.5rem;
+  border-bottom: 1px dotted black;
+}
+footer {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+footer .contact-footer {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+footer .contact-footer button {
+  color: white;
+  background-color: black;
+  padding: 10px;
+}
+footer .copyright p {
+  font-size: 1.5rem;
+  padding: 1px;
+  text-align: center;
+  color: white;
+}
