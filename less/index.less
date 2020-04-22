@@ -29,6 +29,12 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
+
+html {
+	font-size: 62.5%;
+}
+
+
 body {
 	line-height: 1;
 }
@@ -50,10 +56,94 @@ table {
 
 /* Set every element's box-sizing to border-box */
 * {
-    box-sizing: border-box;
+	box-sizing: border-box;
+	
 }
 
 html, body {
-    height: 100%;
+	height: 100%;
+	
+}
+
+header {
+	
+	nav {
+			
+		ul {
+			border-bottom: 4px solid black;	
+			display: flex;
+			justify-content: space-around;
+			
+			li {
+				
+				font-size: 2rem;
+
+				a {
+					text-decoration: none;
+					color: black;
+				}
+			}
+		}
+	}
+}
+
+.container-1 {
+		display: flex;
+			
+	
+	.name{
+		display: flex;
+		flex-direction: column;
+		
+		;
+	
+			h1 {
+			font-size: 12rem;
+			padding-top: 15px;
+		}
+			h2 {
+			font-size: 2.5rem;
+			padding-top: 24px;
+		}
+	}	
+}
+
+.container-2 {
+	display: flex;
+	justify-content: space-around;
+	
+		
+	
+		
+	
+
+		h3 {
+			font-size: 1.8rem;	
+			font-weight: bold;
+			}
+
+	.about {
+		width: 60%;
+		padding-left: 10px;
+		padding-top: 30px;
+			p {
+				font-size: 1.5rem;
+				padding-top: 5px;
+			}
+	}
+	.skills {
+		border-left: 1px solid black;
+		width: 35%;
+		padding-left: 30px;
+		padding-top: 30px;
+
+		li {
+			font-size: 1.8rem;
+			padding-top: 10px;
+		}
+		}
+
+		
+	
 }
 
